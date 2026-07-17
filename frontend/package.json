@@ -1,0 +1,27 @@
+{
+  "name": "ridehail-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "mapbox-gl": "^3.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-map-gl": "^7.1.7",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.7.5",
+    "zustand": "^4.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead"],
+    "development": ["last 1 chrome version"]
+  }
+}
