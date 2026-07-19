@@ -1,0 +1,143 @@
+/* Auth pages shared styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(0,212,170,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(0,100,200,0.06) 0%, transparent 50%),
+    var(--bg-primary);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.logo-icon {
+  font-size: 32px;
+}
+
+.auth-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--accent);
+}
+
+.auth-subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.auth-error {
+  background: rgba(255,107,107,0.1);
+  border: 1px solid rgba(255,107,107,0.3);
+  color: var(--danger);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.auth-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-demo {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.auth-demo p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.demo-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.demo-btns .btn {
+  flex: 1;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.role-btn {
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.role-btn:hover, .role-btn.active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.role-btn .role-icon { font-size: 24px; display: block; margin-bottom: 6px; }
+.role-btn .role-name { font-size: 13px; font-weight: 600; }
