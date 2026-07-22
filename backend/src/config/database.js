@@ -6,11 +6,10 @@ const MAX_RETRIES = 5;
 
 async function connectMongo() {
   try{
-    const uri = process.env.MONGO_URI;
-
-    await mongoose.connect(uri ,{
+    const uri = process.env.MONGO_URI || "mongodb://localhost:27017";
+    await mongoose.connect(uri,{
       maxPoolSize : 10,
-      erverSelectionTimeoutMS: 10000,
+      serverSelectionTimeoutMS: 10000,
       socketTimeoutMS: 45000,
     })
 
