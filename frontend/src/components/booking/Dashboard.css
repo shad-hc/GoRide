@@ -165,7 +165,7 @@
 /* ── Full-width button */
 .full-btn { width: 100%; padding: 14px; font-size: 14px; }
 
-/* ── Estimate card /
+/* ── Estimate card */
 .estimate-card {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
@@ -443,7 +443,7 @@
   margin-top: 4px;
 }
 
-/* ── History page /
+/* ── History page */
 .history-page {
   min-height: 100vh;
   background: var(--bg-primary);
@@ -496,7 +496,7 @@
 
 .ride-route-mini span { display: flex; align-items: center; gap: 6px; }
 
-/* ── Rating page /
+/* ── Rating page */
 .rating-page {
   min-height: 100vh;
   display: flex;
